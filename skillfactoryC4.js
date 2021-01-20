@@ -5,7 +5,7 @@ class ElectricalAppliance{
 }
 
   plugIn(){
-    console.log(`${this.name} is plugged! It takes ${this.power} kwt`);
+    console.log(`${this.name} is plugged! It takes ${this.power} kwt`); # строка, потенциально приводящая к ReferenceError, если вдруг где-то забудете указать 'this.power'
     this.isPlugged = true;
  }
 
